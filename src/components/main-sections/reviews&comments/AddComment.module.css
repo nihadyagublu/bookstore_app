@@ -1,0 +1,127 @@
+.form-container {
+  margin: 0rem auto;
+  box-sizing: border-box;
+  display: block;
+  float: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 71vw;
+  height: 60vh;
+  border: 1px solid rgb(248, 245, 245);
+  border-radius: 6px;
+  color: white;
+  margin: 0 auto;
+  background-color: rgb(11, 56, 11);
+  font-size: 19px;
+}
+
+.form-header {
+  margin: 2rem auto;
+}
+
+form button {
+  width: 12vw;
+  height: 6vh;
+  border-radius: 12px;
+  background-color: rgb(5, 38, 5);
+  color: white;
+  box-shadow: 0px 0px 1px 0px;
+  margin: 2rem auto;
+  font-size: 16px;
+}
+
+.userLabel input {
+  padding: 0.3rem;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form label {
+  float: left;
+  text-align: right;
+  width: 10em;
+  margin-right: 10px;
+}
+
+.comment textarea {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 20vh;
+  width: 40vw;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.userLabel,
+.comment {
+  margin-top: 10px;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(44, 96, 8);
+}
+
+@media (max-width: 480px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 55rem;
+    height: 60rem;
+    border: 1px solid rgb(248, 245, 245);
+    border-radius: 5px;
+    color: white;
+    margin-top: 10%;
+    margin-left: 11.5%;
+    /* padding-bottom: 4rem;
+        padding-top: 1rem;
+        padding-left: 1rem; */
+    background-color: rgb(11, 56, 11);
+    padding-left: 1rem;
+  }
+
+  form button {
+    width: 20rem;
+    height: 5rem;
+    margin-left: 5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    background-color: rgb(5, 38, 5);
+    color: white;
+    box-shadow: 0px 0px 1px 0px;
+  }
+
+  .name input {
+    height: 3rem;
+    width: 40rem;
+  }
+
+  form label {
+    float: left;
+    text-align: right;
+    width: 10em;
+    margin-right: 10px;
+  }
+
+  .comment textarea {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 20vh;
+    width: 40vw;
+    text-align: left;
+    padding: 1em;
+    /* direction: ltr; 
+        text-indent: 1px; */
+  }
+
+  .name,
+  .surname,
+  .comment {
+    margin-top: 10px;
+  }
+}

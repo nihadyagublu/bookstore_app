@@ -1,0 +1,28 @@
+.main_section_container {
+  min-height: 59vh;
+}
+
+.book_displayer_button {
+  border-radius: 12px;
+
+  background-color: rgb(11, 56, 11);
+  color: rgb(171, 184, 184);
+  width: 13vw;
+  margin: 4rem auto;
+  box-shadow: 0px 0px 1px 0px;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0.5rem;
+  float: none;
+  display: block;
+}
+
+.book_displayer_button:hover {
+  color: #ffffff;
+}
+
+.loading_message {
+  margin-top: 15vh;
+  margin-left: 44vw;
+  color: white;
+}

@@ -1,0 +1,41 @@
+.header {
+  height: 9rem;
+  background-image: linear-gradient(120deg, black 15%, green 100%);
+  box-shadow: 5px 5px 10px 10px;
+  width: 100%;
+  min-width: 480px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  color: darkgreen;
+  font-size: 40px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  font-size: 2vh;
+}
+
+.nav li {
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(171, 184, 184);
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: #ffffff;
+}

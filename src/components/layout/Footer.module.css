@@ -1,0 +1,15 @@
+.footer-container {
+  margin: 2rem 2rem;
+}
+
+.separator-line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.footer-info {
+  margin: 1rem;
+  color: white;
+  font-size: 14px;
+}

@@ -1,0 +1,15 @@
+.posted_comment {
+  border: 1px rgb(241, 234, 234) solid;
+  border-radius: 6px;
+  margin-top: 2vh;
+  box-sizing: border-box;
+  background-color: rgb(90, 101, 7);
+  color: white;
+  list-style: none;
+  width: 60rem;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+}
+.posted_name_surname {
+  color: rgb(4, 249, 57);
+}

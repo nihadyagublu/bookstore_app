@@ -1,0 +1,19 @@
+.spinner {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 8rem 45%;
+  border-radius: 50%;
+  border: 6px solid rgb(75, 128, 37);
+  border-color: rgb(75, 128, 37) transparent rgb(75, 128, 37) transparent;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,83 @@
+.book_item {
+  width: 12rem;
+  height: 12rem;
+  margin: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  padding-bottom: 6rem;
+  padding-top: 10px;
+  border-radius: 7px;
+  padding-left: 5px;
+  box-shadow: 5px 5px 40px 15px rgb(18, 99, 1);
+  background-color: rgb(41, 64, 41);
+  color: white;
+  transition: all 0.4s;
+}
+
+img {
+  width: 65%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+
+.info_book {
+  box-sizing: border-box;
+  height: 2rem;
+}
+
+.book_item button {
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 3rem;
+  padding: 0.2rem;
+}
+
+.book_item:hover {
+  cursor: pointer;
+  transform: scale(1.15, 1.15);
+}
+
+.book_item button:hover {
+  background-color: rgb(21, 59, 13);
+  color: white;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 480px) {
+  .book_item {
+    width: 24rem;
+    height: 28.5rem;
+    padding-bottom: 8rem;
+    margin-left: 0;
+  }
+
+  .info_book p {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .book_item button {
+    position: absolute;
+    top: 85%;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 14rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+}

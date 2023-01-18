@@ -1,0 +1,23 @@
+.about-container {
+  width: 45rem;
+  margin: 7rem auto;
+  box-shadow: 0px 0px 30px 10px rgb(18, 99, 1);
+  background-color: rgb(41, 64, 41);
+
+  border-radius: 12px;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 14rem;
+}
+
+.header_about {
+  text-align: center;
+  color: rgb(195, 207, 198);
+}
+
+.about_body {
+  margin: 2rem 0;
+  color: rgb(222, 237, 210);
+}
