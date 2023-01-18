@@ -13,11 +13,16 @@
   top: 40vh;
   left: 27vw;
   width: 40%;
-  height: 20vh;
-  z-index: 10;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: rgb(117, 120, 146);
+  height: 25vh;
+  z-index: 20;
+  /* background-color: rgb(23, 33, 20); */
+  /* background-image: linear-gradient(100deg, black 5%, green 100%); */
+
+  /* padding: 10px; */
+  border-radius: 12px;
+  background-color: rgb(116, 117, 80);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   color: white;
   /* display: flex;
@@ -25,27 +30,50 @@
     justify-content: flex-end; */
 }
 
-.error_title {
-  position: fixed;
-  padding: 10rem;
-  top: 40vh;
-  left: 27vw;
-
-  border-radius: 5px;
-  width: 39.1%;
-  height: 3vh;
+.error_title h3 {
   padding: 1rem;
-  background-color: aqua;
+  background-image: linear-gradient(
+    100deg,
+    rgb(80, 117, 80) -40%,
+    rgb(122, 4, 4) 70%
+  );
+  color: white;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.error_message_body {
-  /* padding: 3.5rem; */
-  margin-top: 4rem;
-  margin-left: 9rem;
+.error_message_body h4 {
+  margin-left: 20%;
+  margin-top: 5%;
+  /* color: rgb(80, 117, 80); */
+  color: white;
+}
+
+.error-modal-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button_confirm {
-  margin-left: 15rem;
-  margin-top: 2rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 12px;
+  margin-top: 5%;
+  background-image: linear-gradient(
+    100deg,
+    rgb(80, 117, 80) -40%,
+    rgb(122, 4, 4) 70%
+  );
+  color: white;
+}
+
+.button_confirm:hover {
+  background-image: linear-gradient(
+    100deg,
+    rgb(121, 91, 9) 100%,
+    rgb(69, 8, 8) 10%
+  );
 }

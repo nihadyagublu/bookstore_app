@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./UserInputList.module.css";
 import ReceivedComment from "./ReceivedComment";
+import LoadingSpinner from "../home/LoadingSpinner";
 
 const UserInputList = (props) => {
   return (

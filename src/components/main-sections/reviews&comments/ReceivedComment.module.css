@@ -5,8 +5,8 @@
   box-sizing: border-box;
   background-color: rgb(90, 101, 7);
   color: white;
-  list-style: none;
-  width: 60rem;
+
+  width: 65vw;
   padding: 0.5rem 1rem;
   font-size: 16px;
 }

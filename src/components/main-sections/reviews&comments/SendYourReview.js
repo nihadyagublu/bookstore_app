@@ -4,8 +4,11 @@ import AddComment from "./AddComment";
 import styles from "./SendYourReview.module.css";
 import axios from "axios";
 import results from "./results";
+import LoadingSpinner from "../home/LoadingSpinner";
 
 const SendYourReview = () => {
+  const [isLoading, setIsLoading] = useState(null);
+
   const [userInput, setUserInput] = useState([]);
 
   async function addedCommentHandler(comment) {
@@ -23,6 +26,7 @@ const SendYourReview = () => {
   }
 
   const getUserComment = async () => {
+    setIsLoading(true);
     const response = await fetch(
       "https://last-before-default-rtdb.firebaseio.com/books.json"
     );
@@ -39,6 +43,7 @@ const SendYourReview = () => {
       });
     }
     setUserInput(loadedComments);
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -47,12 +52,9 @@ const SendYourReview = () => {
 
   return (
     <div className={styles["comment-review-page-container"]}>
-      <section>
-        <AddComment addedComment={addedCommentHandler} />
-      </section>
-      <section>
-        <UserInputList userData={userInput} />
-      </section>
+      <AddComment addedComment={addedCommentHandler} />
+      {isLoading && userInput.length === 0 && <LoadingSpinner />}
+      {userInput.length !== 0 && <UserInputList userData={userInput} />}
     </div>
   );
 };
