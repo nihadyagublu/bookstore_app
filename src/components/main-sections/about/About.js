@@ -7,7 +7,7 @@ const About = () => {
         <h1> About</h1>
       </div>
       <div className={styles["about_body"]}>
-        <h3>
+        <h3 align="justify">
           This is a web application developed by Nihad Yagublu. I've used New
           York Times Books API and axios to fetch the data. Besides, Firebase
           was used for small database related functions.

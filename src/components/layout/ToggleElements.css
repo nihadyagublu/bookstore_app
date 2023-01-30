@@ -1,0 +1,106 @@
+.MyBlock {
+  display: flex;
+  flex-direction: column;
+  min-width: 50px;
+}
+
+.LightWritten {
+  position: absolute;
+  top: 12%;
+  right: 15%;
+  border: transparent;
+  color: rgb(39, 39, 39);
+  opacity: 0.7;
+}
+
+.DarkWritten {
+  position: absolute;
+  top: 12%;
+  right: 22%;
+  border: transparent;
+  color: rgb(39, 39, 39);
+  opacity: 0.7;
+}
+
+.darkChosen {
+  color: rgb(255, 255, 255);
+}
+
+.lightChosen {
+  color: rgb(255, 255, 255);
+}
+.straightline {
+  position: absolute;
+  top: 11.5%;
+  right: 20%;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(71, 7, 7);
+  opacity: 0.7;
+}
+
+.circle {
+  position: absolute;
+  top: 11%;
+  right: 21.7%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(6, 61, 10);
+}
+
+.myFade-enter {
+  right: 21.7%;
+}
+
+.myFade-enter-active {
+  right: 19.9%;
+  transition: all 0.6s;
+}
+
+.myFade-enter-done {
+  right: 19.9%;
+}
+
+.myFade-exit {
+  right: 19.9%;
+}
+
+.myFade-exit-active {
+  right: 21.7%;
+  transition: all 0.6s;
+}
+
+.myFade-exit-done {
+  right: 21.7%;
+}
+
+.lightChosen,
+.LightWritten,
+.darkChosen,
+.DarkWritten:hover {
+  cursor: pointer;
+}
+
+/* .LightWritten,
+.DarkWritten:hover {
+  color: rgb(255, 255, 255);
+} */
+
+@media (max-width: 480px) {
+  .MyBlock,
+  .LightWritten,
+  .DarkWritten,
+  .circle {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .MyBlock,
+  .LightWritten,
+  .DarkWritten,
+  .circle {
+    display: none;
+  }
+}

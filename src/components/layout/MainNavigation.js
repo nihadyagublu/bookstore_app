@@ -1,5 +1,6 @@
 import classes from "./MainNavigation.module.css";
 import { NavLink } from "react-router-dom";
+import Toggle from "./Toggle";
 
 const MainNavigation = (props) => {
   let activeStyle = classes.active;
@@ -32,6 +33,9 @@ const MainNavigation = (props) => {
             >
               Send your reviews & comments
             </NavLink>
+          </li>
+          <li>
+            <Toggle />
           </li>
         </ul>
       </nav>

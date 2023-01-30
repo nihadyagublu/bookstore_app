@@ -6,7 +6,7 @@
   color: white;
   margin: 4rem auto;
 
-  background-color: rgb(108, 154, 108);
+  background-color: rgb(70, 105, 70);
 }
 
 .posted_header {
@@ -20,4 +20,26 @@
 ul {
   list-style: none;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .posted_comments {
+    width: 85vw;
+  }
+
+  ul {
+    list-style: none;
+    width: 67vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 820px) {
+  .posted_comments {
+    width: 95vw;
+  }
+
+  ul {
+    list-style: none;
+    width: 77vw;
+  }
 }

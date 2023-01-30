@@ -29,8 +29,6 @@ const BookList = (props) => {
           ))}
         </ul>
       )}
-
-      {/* {infoSelected && <SeparateBookPage myboolean={infoSelected} />} */}
     </div>
   );
 };

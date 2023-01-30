@@ -13,21 +13,16 @@
   top: 40vh;
   left: 27vw;
   width: 40%;
-  height: 25vh;
+  /* height: 25vh; */
   z-index: 20;
-  /* background-color: rgb(23, 33, 20); */
-  /* background-image: linear-gradient(100deg, black 5%, green 100%); */
+  padding-bottom: 1rem;
 
-  /* padding: 10px; */
   border-radius: 12px;
   background-color: rgb(116, 117, 80);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   color: white;
-  /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end; */
 }
 
 .error_title h3 {
@@ -44,10 +39,14 @@
   align-items: center;
 }
 
+.error_message_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .error_message_body h4 {
-  margin-left: 20%;
-  margin-top: 5%;
-  /* color: rgb(80, 117, 80); */
+  padding: 1rem 1rem;
+
   color: white;
 }
 
@@ -61,7 +60,7 @@
   width: 6rem;
   height: 2rem;
   border-radius: 12px;
-  margin-top: 5%;
+
   background-image: linear-gradient(
     100deg,
     rgb(80, 117, 80) -40%,
@@ -76,4 +75,14 @@
     rgb(121, 91, 9) 100%,
     rgb(69, 8, 8) 10%
   );
+}
+
+@media (max-width: 480px) {
+  .errorModal_unit {
+    top: 40vh;
+    left: 12vw;
+    width: 80%;
+
+    z-index: 20;
+  }
 }

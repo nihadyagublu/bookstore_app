@@ -1,5 +1,6 @@
 .main_section_container {
   min-height: 59vh;
+  width: 100%;
 }
 
 .book_displayer_button {
@@ -25,4 +26,10 @@
   margin-top: 15vh;
   margin-left: 44vw;
   color: white;
+}
+
+@media (max-width: 480px) {
+  .book_displayer_button {
+    width: 40vw;
+  }
 }

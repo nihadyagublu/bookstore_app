@@ -21,3 +21,14 @@
   margin: 2rem 0;
   color: rgb(222, 237, 210);
 }
+
+@media (max-width: 480px) {
+  .about-container {
+    width: 17rem;
+    margin: 5rem auto;
+
+    padding: 1rem 1rem;
+
+    margin-bottom: 14rem;
+  }
+}

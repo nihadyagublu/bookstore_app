@@ -13,7 +13,7 @@ const ModalOverlay = (props) => {
         <h3>Error occured</h3>
       </header>
       <div className={styles["error_message_body"]}>
-        <h4>Please make sure you filled in all the blanks</h4>
+        <h4 align="justify">Please make sure you filled in all the blanks</h4>
       </div>
       <section className={styles["error-modal-actions"]}>
         <button

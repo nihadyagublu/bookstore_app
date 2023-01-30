@@ -39,34 +39,32 @@ const AddComment = (props) => {
 
   return (
     <React.Fragment>
-      <div className={styles["form-container"]}>
-        <form onSubmit={submitHandler}>
-          <div className={styles["form-header"]}>
-            <h1>Send your reviews & comments</h1>
-          </div>
-          <div className={styles.userLabel}>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" ref={nameRef} />
-          </div>
+      <form onSubmit={submitHandler}>
+        <div className={styles["form-header"]}>
+          <h1>Send your reviews & comments</h1>
+        </div>
+        <div className={styles.userLabel}>
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" ref={nameRef} />
+        </div>
 
-          <div className={styles.userLabel}>
-            <label htmlFor="surname">Surname:</label>
-            <input type="text" id="surname" ref={surnameRef} />
-          </div>
+        <div className={styles.userLabel}>
+          <label htmlFor="surname">Surname:</label>
+          <input type="text" id="surname" ref={surnameRef} />
+        </div>
 
-          <div className={styles.comment}>
-            <label htmlFor="comment">Your comment: </label>
-            <textarea
-              id="comment"
-              placeholder="Enter what you think about our website..."
-              ref={commentRef}
-              maxLength={800}
-            />
-          </div>
+        <div className={styles.comment}>
+          <label htmlFor="comment">Your comment: </label>
+          <textarea
+            id="comment"
+            placeholder="Enter what you think about our website..."
+            ref={commentRef}
+            maxLength={800}
+          />
+        </div>
 
-          <button type="submit">Submit your comment</button>
-        </form>
-      </div>
+        <button type="submit">Submit your comment</button>
+      </form>
 
       {errorOcurred && <SpaceErrorModal onConfirm={setErrorOcurred} />}
     </React.Fragment>
