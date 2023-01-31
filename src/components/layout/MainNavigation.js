@@ -12,7 +12,7 @@ const MainNavigation = (props) => {
         <ul>
           <li>
             <NavLink
-              to="/onlinebookstore/home"
+              to="/home"
               className={({ isActive }) => (isActive ? activeStyle : "")}
             >
               Home
@@ -20,7 +20,7 @@ const MainNavigation = (props) => {
           </li>
           <li>
             <NavLink
-              to="/onlinebookstore/about"
+              to="/about"
               className={({ isActive }) => (isActive ? activeStyle : "")}
             >
               About
@@ -28,7 +28,7 @@ const MainNavigation = (props) => {
           </li>
           <li>
             <NavLink
-              to="/onlinebookstore/comments&reviews"
+              to="/comments&reviews"
               className={({ isActive }) => (isActive ? activeStyle : "")}
             >
               Send your reviews & comments

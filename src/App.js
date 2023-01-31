@@ -10,17 +10,10 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route
-          path="/onlinebookstore/"
-          exact
-          element={<Navigate to="/onlinebookstore/home" />}
-        />
-        <Route path="/onlinebookstore/home" element={<HomePage />} />
-        <Route path="/onlinebookstore/about" element={<AboutPage />} />
-        <Route
-          path="/onlinebookstore/comments&reviews"
-          element={<ReviewAndCommentPage />}
-        />
+        <Route path="/" exact element={<Navigate to="/home" />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/comments&reviews" element={<ReviewAndCommentPage />} />
       </Routes>
     </Layout>
   );
