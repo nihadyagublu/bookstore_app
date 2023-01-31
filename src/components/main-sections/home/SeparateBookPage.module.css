@@ -108,6 +108,7 @@
   .separatePage {
     width: 80%;
     padding: 1rem;
+    padding-bottom: 4rem;
     top: 7%;
     left: 4%;
     text-align: center;
